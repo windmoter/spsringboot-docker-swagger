@@ -2,10 +2,7 @@ pipeline{
     agent any
     environment {
         SCRIPT_PATH = '/var/jenkins_home/custom/snapcampus'
-    }
-    tools {
-        gradle 'gradle 8.6'
-    }
+    } 
     stages{
         stage('Start') {
             steps {
