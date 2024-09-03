@@ -1,4 +1,5 @@
 pipeline{
+    echo 'pipeline ...go'
     agent any
     environment {
         SCRIPT_PATH = '/var/jenkins_home/custom/snapcampus'
