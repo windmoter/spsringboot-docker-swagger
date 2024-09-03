@@ -93,4 +93,6 @@ distDocker {
 task createWrapper(type: Wrapper) {
     gradleVersion = '2.0'
 }
-
+tasks.named('jar') {
+	enabled = false
+}
