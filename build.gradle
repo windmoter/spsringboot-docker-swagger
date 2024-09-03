@@ -12,7 +12,7 @@ buildscript {
         classpath 'se.transmode.gradle:gradle-docker:1.2'
     }
 }
-apply plugin: "sonar-runner"
+// apply plugin: "sonar-runner"
 apply plugin: 'application'
 apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
@@ -20,15 +20,15 @@ apply plugin: 'java'
 apply plugin: 'docker'
 
 
-sonarRunner {
-    sonarProperties {
-        property "sonar.host.url", "http://162.243.152.234:9000"
-        property "sonar.jdbc.url", "jdbc:mysql://162.243.152.234:3306/sonar"
-        property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
-        property "sonar.jdbc.username", "sonar"
-        property "sonar.jdbc.password", "123qwe"
-    }
-}
+// sonarRunner {
+//     sonarProperties {
+//         property "sonar.host.url", "http://162.243.152.234:9000"
+//         property "sonar.jdbc.url", "jdbc:mysql://162.243.152.234:3306/sonar"
+//         property "sonar.jdbc.driverClassName", "com.mysql.jdbc.Driver"
+//         property "sonar.jdbc.username", "sonar"
+//         property "sonar.jdbc.password", "123qwe"
+//     }
+// }
 
 
 jar {
