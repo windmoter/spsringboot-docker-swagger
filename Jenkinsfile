@@ -1,5 +1,4 @@
-pipeline{
-    echo 'pipeline ...go'
+pipeline{ 
     agent any
     environment {
         SCRIPT_PATH = '/var/jenkins_home/custom/snapcampus'
@@ -8,6 +7,11 @@ pipeline{
         gradle 'gradle 8.6'
     }
     stages{
+        stage('Start') {
+            steps {
+                echo 'Pipeline ...go'
+            }
+        }
         stage('Checkout') {
             steps {
                 echo 'Checkout...'
